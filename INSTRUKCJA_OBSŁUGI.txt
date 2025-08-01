@@ -1,0 +1,31 @@
+Program służy automatycznemu przepisywaniu danych z pliku Excel do strony halowej ZiHeR.
+
+Należy mieć pobrany folder 'Rozliczenie_oboz_ZHR' z całą jego zawartością w jednym miejscu na dysku, np. w pobranych.
+
+Po pierwsze należy przygotować rozliczenie w Excelu w pliku 'rozliczenie_excel' zgodnie z wytycznymi podanymi w pliku. Gotowy plik nadpisujemy.
+Następnie należy pobrać Pythona w najnowszej wersji (https://www.python.org/downloads) oraz dowolny edytor kodu źródłowego, np. Visual Studio Code (https://code.visualstudio.com/download).
+
+Warunkiem jest posiadanie przeglądarki Chrome i pobranego pliku chromedriver (dla wersji 138 jest już pobrany w folderze).
+Ważne, aby wersja przeglądarki była aktualna z plikiem chromedriver, który można pobrać tutaj: https://developer.chrome.com/docs/chromedriver/downloads?hl=pl
+Sprawdzanie wersji przeglądarki --> wpisz w pasek wyszukiwania --> chrome://version
+
+Podsumowanie - potrzebujesz:
+- Plik Excel z fakturami – rozliczenie_excel.xlsx
+- Program obsługujący wpisywanie – wprowadzanie_faktur.py (już gotowy!)
+- Sterownik do przeglądarki Chrome – plik chromedriver.exe
+- Przeglądarka Google Chrome
+- Python 3.10+
+
+Następnie można przystąpić do uruchomienia programu.
+1. Zamknij wszystkie otwarte pliki związane z rozliczeniem.
+2. Uruchom wiersz poleceń (CMD) --> Naciśnij klawisz Windows (🪟) na klawiaturze i wpisz cmd/wiersz poleceń.
+3. Wpisz 
+cd C:\Users\hp\Downloads\rozliczenie2025 --> tutaj wstaw ścieżkę do pliku (domyślnie pobrane na dysku C)
+python wprowadzanie_faktur.py
+(Nie klikaj Enter, poczekaj aż przeglądarka sama załaduje halowego ZiHeR'a).
+4. Zaloguj się do ZiHeR.
+5. Wróć do wiersza poleceń i kliknij na klawiaturze 'Enter'.
+6. Poczekaj na komunikat w konsoli "Wszystkie dokumenty zostały przetworzone."
+7. Wyłącz wszystkie otwarte okna i następnie zaloguj się ponownie na stronę ZiHeR i sprawdź poprawność wpisanych danych.
+
+Z harcerskim pozdrowieniem Czuwaj!
